@@ -1,0 +1,15 @@
+int s[100];
+void main(){
+ int i,j;
+ i=0;
+ j=0;
+ while(i<10){
+   s[i]=i;
+   printf(s[i]);
+   i=i+1;
+  }
+ while(j<10){
+   printf(s[j]);
+   j=j+1;
+ }
+}

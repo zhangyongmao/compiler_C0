@@ -1,0 +1,18 @@
+char a,b;
+void exchange()
+{
+	int x;
+	x = a;
+	a = b;
+	b = x;
+	printf("a = ",a);
+	printf("  ");
+	printf("b = ",b);
+}
+
+void main()
+{
+	scanf(a);
+	scanf(b);
+	exchange();
+}

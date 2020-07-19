@@ -1,0 +1,41 @@
+void move(int n,char a,char b)
+{
+        printf(n);
+	printf(":",a);
+	printf("-->",b);
+	printf("    ");
+}
+void Hanoi(int n,char a,char b,char c)
+{
+    if(n==1)
+        move(n,a,c);
+    else
+    {
+        Hanoi(n-1,a,c,b);
+        move(n,a,c);
+        Hanoi(n-1,b,a,c);
+    }
+ }
+ int cmp(int a,int b)
+ {
+    if(a>b)
+	return(a);
+	else
+	return (b);
+}
+ void main()
+{
+  const int x=10;
+   int n,m;
+   printf("inputnumber:");
+   scanf(n);
+   Hanoi(n,'A','B','C');
+   printf("inputnumber:");
+   scanf(m);
+   if(x>cmp(n,m))
+     printf("the max number:",x);
+   else
+     printf("the max number:",cmp(n,m));
+   m=m*x+m/x;
+   printf(" m=",m);
+}

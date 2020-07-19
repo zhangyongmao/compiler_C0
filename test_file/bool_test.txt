@@ -1,0 +1,15 @@
+int change[10];
+void main(){
+    int a,b,c,d;
+    a = 1;
+    b = 2;
+    c = 4;
+    d = 100;
+    if(a == 1 && b == 2 && c == 5 || d != 99 && d == 101 || c == 4 && d != 0){
+        printf("vvvvvv");
+    }
+    else{
+        printf("fffffff");
+    }
+    return (0);
+}

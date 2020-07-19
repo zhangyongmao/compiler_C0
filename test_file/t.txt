@@ -1,0 +1,70 @@
+const int const1 =1,const2= -100;
+const int const3 = 100;
+const char const4 = '+';
+
+int var1,var2;
+int var3;
+int var4;
+
+int max(int var1,int var2,int var3){
+	int dell;
+   if(var1>=var2)
+   {
+     if(var1>=var3)
+	dell=var1;
+     else dell =var3;
+     }
+    else
+    {
+      if(var2>=var3)
+	dell =var2;
+     else dell = var3;
+     }
+	return(dell);
+}
+int add1(int base,int step,int n){
+while(n>0){
+	base = base +step;
+	n=n-1;
+    }
+	return(base);
+}
+
+void main(){
+int cast1,cast2,cast3;
+int cast4,cast5,cast6;
+int rel,choice;
+
+var3=const3;
+var4=const4;
+
+printf("input there number");
+scanf(cast1,cast2,cast3);
+var1 = max(cast1,cast2,cast3);
+printf("the max number:",var1);
+
+printf("Input the base:");
+scanf(cast4);
+printf("Input the step:");
+scanf(cast5);
+printf("Input the number:");
+scanf(cast6);
+rel = add1(cast4,cast5,cast6);
+
+printf("the result:");
+printf(rel);
+printf(var4);
+
+printf("Input the choice: 1 2 3 , 0 for return ");
+scanf(choice);
+while(choice != 0)
+{
+	switch(choice){
+        case 1:printf("good");
+        case 2:printf("better");
+        case 3:printf("best");
+      }
+	scanf(choice);
+}
+	
+}

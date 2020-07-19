@@ -1,0 +1,115 @@
+const_int,1, ,const1
+const_int,-100, ,const2
+const_int,100, ,const3
+const_char,43, ,const4
+int, , ,var1
+int, , ,var2
+int, , ,var3
+int, , ,var4
+func,int, ,max
+param,int, ,var1
+param,int, ,var2
+param,int, ,var3
+int, , ,dell
+>=,var1,var2,LABEL_3
+jmp, , ,LABEL_2
+label, , ,LABEL_3
+jmp, , ,LABEL_0
+label, , ,LABEL_2
+jmp, , ,LABEL_1
+label, , ,LABEL_0
+>=,var1,var3,LABEL_7
+jmp, , ,LABEL_6
+label, , ,LABEL_7
+jmp, , ,LABEL_4
+label, , ,LABEL_6
+jmp, , ,LABEL_5
+label, , ,LABEL_4
+=,var1, ,dell
+jmp, , ,LABEL_8
+label, , ,LABEL_5
+=,var3, ,dell
+label, , ,LABEL_8
+jmp, , ,LABEL_9
+label, , ,LABEL_1
+>=,var2,var3,LABEL_13
+jmp, , ,LABEL_12
+label, , ,LABEL_13
+jmp, , ,LABEL_10
+label, , ,LABEL_12
+jmp, , ,LABEL_11
+label, , ,LABEL_10
+=,var2, ,dell
+jmp, , ,LABEL_14
+label, , ,LABEL_11
+=,var3, ,dell
+label, , ,LABEL_14
+label, , ,LABEL_9
+return, , ,dell
+end_func, , , 
+func,int, ,add1
+param,int, ,base
+param,int, ,step
+param,int, ,n
+label, , ,LABEL_15
+<=,n,0,LABEL_16
++,base,step,$tmp0
+=,$tmp0, ,base
+-,n,1,$tmp1
+=,$tmp1, ,n
+jmp, , ,LABEL_15
+label, , ,LABEL_16
+return, , ,base
+end_func, , , 
+func, , ,main
+int, , ,cast1
+int, , ,cast2
+int, , ,cast3
+int, , ,cast4
+int, , ,cast5
+int, , ,cast6
+int, , ,rel
+int, , ,choice
+=,100, ,var3
+=,43, ,var4
+printf,input there number, , 
+scanf, ,int,cast1
+scanf, ,int,cast2
+scanf, ,int,cast3
+call_param, , ,cast3
+call_param, , ,cast2
+call_param, , ,cast1
+call_r,max, ,$tmp2
+=,$tmp2, ,var1
+printf,the max number:,$tmp2,int
+printf,Input the base:, , 
+scanf, ,int,cast4
+printf,Input the step:, , 
+scanf, ,int,cast5
+printf,Input the number:, , 
+scanf, ,int,cast6
+call_param, , ,cast6
+call_param, , ,cast5
+call_param, , ,cast4
+call_r,add1, ,$tmp3
+nop,$tmp3, ,rel
+printf,the result:, , 
+printf, ,$tmp3,int
+printf, ,var4,int
+printf,Input the choice: 1 2 3 , 0 for return , , 
+scanf, ,int,choice
+label, , ,LABEL_17
+==,choice,0,LABEL_18
+==,choice,1,LABEL_19
+==,choice,2,LABEL_20
+==,choice,3,LABEL_21
+label, , ,LABEL_19
+printf,good, , 
+label, , ,LABEL_20
+printf,better, , 
+label, , ,LABEL_21
+printf,best, , 
+scanf, ,int,choice
+jmp, , ,LABEL_17
+label, , ,LABEL_18
+exit, , , 

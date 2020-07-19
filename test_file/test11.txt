@@ -1,0 +1,17 @@
+int a,b,c,d;
+void main(){
+	b = 20;
+	a = 4;
+	d = 1;
+	c = 0;
+	while (d != 0){
+		if ((10 * d + 1) >= a * 5){
+			c = c + 2;
+			a = a * 2;
+			d = d - 4;
+		}
+		else
+			d = d + 5;
+	}
+	printf(c);
+}

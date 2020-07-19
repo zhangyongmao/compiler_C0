@@ -1,0 +1,16 @@
+int t(int k) {  
+   if (k==0)   
+   return (1);  
+   if (k==1)    
+   return (1);      
+   return (t(k-1)+t(k-2));
+}   
+void main(){  
+   int n,result;     
+   printf("Please enter n: ");  
+   scanf(n);     
+   result=t(n);  
+   printf("t(n) is: ");  
+   printf(result);      
+   return;
+}

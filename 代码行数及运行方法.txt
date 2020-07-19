@@ -1,0 +1,19 @@
+代码行数统计：
+
+词法分析 lexical_anaysis.cpp 		199
+语法分析 grammatical_anaylysis.cpp 	1104
+四元式优化 midcode_optimization.cpp    652
+目标代码生成 code_generator.cpp 	744
+顶层调用 compiler.cpp 		69
+
+总 ： 2768
+
+
+
+代码运行方法：运行compiler.cpp，修改其中读取的源程序文件路径即可编译相应文件。
+输出三个文件：midcode.txt - 生成的四元式
+             midcode_optim.txt - 经过优化的四元式
+             result.asm - 最终生成的mips汇编
+运行汇编文件：java -jar Mars4_5.jar ，打开相应文件运行即可
+
+

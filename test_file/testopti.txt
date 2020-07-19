@@ -1,0 +1,9 @@
+void main(){
+    int a,b,c,d;
+    scanf(b);
+    scanf(c);
+    scanf(d);
+    a=b+c*d-c*d;
+    printf(a);
+
+}

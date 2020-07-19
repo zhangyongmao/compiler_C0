@@ -1,0 +1,11 @@
+const int a = 1;
+int b;
+
+void main(){
+    char a;
+    a ='q';
+    b = 3;
+    printf("a = ",a);
+    printf("b = ",b);
+    return (0);
+}

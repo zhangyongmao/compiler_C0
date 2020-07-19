@@ -1,0 +1,20 @@
+void main(){
+   int a;
+   
+   scanf(a);
+   while(a<=10){
+   switch(a){
+            case 1:printf("a is 1");
+            case 2:printf("a is 2");
+            case 3:printf("a is 3");
+            case 4:printf("a is 4");
+            case 5:printf("a is 5");            
+            case 6:printf("a is 6");
+            case 7:printf("a is 7");
+            case 8:printf("a is 8");
+            case 9:printf("a is 8");
+            case 10:printf("a is 10");
+            }
+        scanf(a);
+     }
+}

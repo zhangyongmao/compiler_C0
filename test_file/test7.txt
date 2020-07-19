@@ -1,0 +1,15 @@
+int square(int x,int y,int h)
+{
+	int s;
+	s = (x + y)*h/2;
+	return (s);
+}
+
+void main()
+{
+	int x,y,h;
+	scanf(x);
+	scanf(y);
+	scanf(h);
+	printf(square(x,y,h));
+}

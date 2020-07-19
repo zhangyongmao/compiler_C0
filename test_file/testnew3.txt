@@ -1,0 +1,53 @@
+int M[11];
+int s[12];
+int t[12];
+int N,k;
+int cmp()
+{
+    int i;
+    i=0;
+    while(s[i]==t[i])
+        {i=i+1;}
+    if(i==k)
+	return (1);
+	else
+	return (0);
+}
+void rank(int a, int b)
+{
+    int i,j;
+    if( b == 0){
+    if(cmp()==0)
+    {
+       j=0;
+       while(j<k)
+        {
+            printf(" ",s[j]);
+            t[j]=s[j];
+            j=j+1;
+        }
+	   printf("__");
+	}
+		return;
+	}
+        i=1;
+	while(i<=N)
+	{
+		if(M[i] == 0 )
+		{
+			M[i] = 1;
+			s[a] = i;
+                rank(a+1,b-1);
+                M[i] = 0;
+                
+        }
+        i=i+1;
+	}
+}
+
+void main ()
+{
+    
+    scanf (N,k);
+    rank(0,N);
+}

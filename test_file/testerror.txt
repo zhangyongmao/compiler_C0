@@ -1,0 +1,8 @@
+
+void main(){
+   int change[10];
+   change[0+1]=1;
+   change[1+2]=2;
+   change[2+3]=change[1]+change[3];
+   printf(change[12]);
+}

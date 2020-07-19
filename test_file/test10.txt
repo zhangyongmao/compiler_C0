@@ -1,0 +1,10 @@
+void main(){
+   int a;
+   int b;
+   scanf(a);
+   scanf(b);
+   printf(a+b);
+   printf(a-b);
+   printf(a*b);
+   printf(a/b);
+}
